@@ -61,7 +61,7 @@ let thisrand = randomColor();
 });
 
 btn__select.addEventListener('click', (e) => {
-	let thisint =  '#' + int.value;
+	let thisint =  '#' + int.value.toString().slice(-6);
 	console.log(thisint);
 	set('main', 'background-color', thisint);
 	out.value = int.value;
