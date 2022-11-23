@@ -7,36 +7,51 @@
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<main class="container" style ="">
+		<main class="container" style="">
 			<div class="cols">
 				<lable id="io">
-					<input type="file" id="png" name="file"  accept=".png"/>
-				<h3>Input</h3>
-				<input type="text" class="int" id="int" value = "000000" placeholder ="000000" />
-				<h3>Gradient Markers</h3>
-				<input type="text" class="int" val="" id="n"/>
-				<h3>OutPut</h3>
-				<input type="text" class="int" id="out" value="#222222" readonly />
+					<input type="file" id="png" name="file" accept=".png" hidden="true" />
+					<h3>Input</h3>
+					<input
+						type="text"
+						class="int"
+						id="int"
+						value="000000"
+						placeholder="000000"
+					/>
+					<h3>Gradient Markers</h3>
+					<input type="text" class="int" val="" id="n" />
+					<h3>OutPut</h3>
+					<input type="text" class="int" id="out" value="#222222" readonly />
+				</lable>
 			</div>
-			<button id="btn__random" class="cols btn btn__random" style="">
-				Random Background
-			</button>
+			<label class="cols">
+				<div class="row">
+					<input
+						type="color"
+						class="box"
+						id="box__one"
+						value="#222222"
+						style=""
+					/>
+					<input type="color" class="box" id="box__two" value="#222222" style=""/>
+					<span >
+						<button id="btn__random" class="btn btn__random" style="">
+							Random Background
+						</button>
+				</div>
+			</label>
 			<div class="cols">
-				<input type="color" id="box__one" value="#222222" />
-				<input type="color" id="box__two" value="#222222" />
-			</div>
-		</label>
-			<div class="line">
-				<button id="btn__select" id = 'set' class="cols btn btn__select" style="">
+				<button id="btn__select" id="set" class="cols btn btn__select" style="">
 					Set Color
 				</button>
-				<div >
-				<button id="btn__grad" id ='gen' class="cols btn btn__select" style="">
-					Color Generator
-				</button>
+				<div>
+					<button id="btn__grad" id="gen" class="cols btn btn__select" style="">
+						Color Generator
+					</button>
 				</div>
 			</div>
 		</main>
-		<script src="color.js"></script>
+		<script type src="color.js"></script>
 	</body>
 </html>

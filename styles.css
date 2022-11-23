@@ -1,6 +1,6 @@
 :root {
 	--color-primary: #f00;
-	--color-secondary: #999;
+	--color-secondary: #222;
 }
 *,
 *::before,
@@ -28,6 +28,7 @@ input {
 input[readonly] {
 	background-color: var(--color-secondary);
 	border: 3px double var(--color-secondary);
+	color: white;
 }
 btn {
 	margin: 1em;
@@ -38,6 +39,9 @@ h3 {
 }
 .btn {
 	background-color: var(--color-secondary);
+	font-family: 'Fira Code', monospace;
+	font-weight: 500;
+	color: white;
 	border: 3px double var(--color-secondary);
 	margin: 1em;
 }
