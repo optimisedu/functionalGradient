@@ -39,6 +39,7 @@ h3 {
 .btn {
 	background-color: var(--color-secondary);
 	border: 3px double var(--color-secondary);
+	margin: 1em;
 }
 .btn:hover {
 	background-color: var(--color-primary);
